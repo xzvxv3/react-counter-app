@@ -1,6 +1,6 @@
 # Simple Counter App (State Lifting Practice)
 
-React의 핵심 개념인 **State Lifting(상태 끌어올리기)**과 **단방향 데이터 흐름**을 학습하기 위해 제작한 간단한 카운터 앱
+React의 핵심 개념인 `State Lifting(상태 끌어올리기)`과 `단방향 데이터 흐름`을 학습하기 위해 제작한 간단한 카운터 앱
 
 ## 🛠 주요 학습 포인트
 - **State Lifting**: 서로 형제 관계인 `Viewer`와 `Controller`가 데이터를 공유할 수 있도록 공통 부모인 `App`으로 상태를 이동시켜 관리
