@@ -1,16 +1,17 @@
-# React + Vite
+# Simple Counter App (State Lifting Practice)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React의 핵심 개념인 **State Lifting(상태 끌어올리기)**과 **단방향 데이터 흐름**을 학습하기 위해 제작한 간단한 카운터 앱
 
-Currently, two official plugins are available:
+## 🛠 주요 학습 포인트
+- **State Lifting**: 서로 형제 관계인 `Viewer`와 `Controller`가 데이터를 공유할 수 있도록 공통 부모인 `App`으로 상태를 이동시켜 관리
+- **Props Handling**: 부모 컴포넌트에서 자식 컴포넌트로 데이터와 함수를 전달하는 방식
+- **Re-rendering**: 부모의 상태가 변경될 때 자식 컴포넌트들이 어떻게 반응하고 업데이트되는지 실습
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏗 프로젝트 구조
+- `App.jsx`: 메인 상태(`count`) 관리 및 함수 정의
+- `Viewer.jsx`: 전달받은 상태값을 화면에 출력
+- `Controller.jsx`: 사용자 입력을 받아 상태 변경 함수 호출
 
-## React Compiler
+## 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="680" height="691" alt="스크린샷 2026-02-18 오후 9 36 59" src="https://github.com/user-attachments/assets/c0ac60de-e844-41f1-87a5-193bf0cf7c81" />
